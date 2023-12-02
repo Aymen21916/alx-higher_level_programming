@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-if __name__ == '__main__':
-    def no_c(my_string):
-        return my_string.replace('c', '').replace('C', '')
+def no_c(my_string):
+    new_string = my_string.translate({ord(i): None for i in 'cC'})
+    return new_string

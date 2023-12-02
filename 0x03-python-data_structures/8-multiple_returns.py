@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-if __name__ == '__main__':
-    def multiple_returns(sentence):
-        if len(sentence) == 0:
-            return (len(sentence), None)
-        return (len(sentence), sentence[0])
+def multiple_returns(sentence):
+    my_tuple = ()
+    if len(sentence) == 0:
+        my_tuple = 0, "None"
+    else:
+        my_tuple = len(sentence), sentence[0]
+    return my_tuple
