@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    if a_dictionary is None:
+    are_all_values_integers = all(isinstance(value, int) for value in my_dict.values())
+    if a_dictionary is None or are_all_values_integers or len(list(a_dictionary.keys())) == 0:
         return None
     else:
         max_score = a_dictionary[list(a_dictionary.keys())[0]]

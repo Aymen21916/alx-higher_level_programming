@@ -7,7 +7,7 @@ def roman_to_int(roman_string):
         "DC": 600, "DCC": 700, "DCCC": 800, "CM": 900, "M": 1000, "MM": 2000,
         "MMM": 3000
     }
-    if roman_string is None or len(roman_string) == 0 or roman_string not in roman_to_int_dict:
+    if roman_string is None or len(roman_string) == 0 or roman_string not in roman_to_int_dict or len(roman_string) > 15:
         return 0
     result = 0
     i = 0
